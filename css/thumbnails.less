@@ -1,0 +1,43 @@
+/* ==========================================================================
+   Thumbnails
+   ========================================================================== */
+
+@thumbSize : 150px;
+@thumbGutter : 8px;
+@thumbRealW : @thumbSize + @thumbGutter;
+
+
+.thumbnailWrapper{
+    margin: @gutter auto;
+    background-color: #ffa;
+    .clearfix();   
+    .thumbnailContainer{
+         margin-left: -@thumbGutter;
+    }
+}
+
+.thumbnail{
+    width: @thumbSize;
+    height: @thumbSize;
+    float:left;
+    .border-radius(50%);
+    margin:0 0 @gutter @thumbGutter;
+    background-color: #aac;
+}
+
+
+#responsiveThumbnails{
+
+    .set(@availableW) {
+        @maxThumbsWide : floor((@availableW + @thumbGutter) / @thumbRealW);
+        @calculatedW : @maxThumbsWide * @thumbRealW;
+        .thumbnailWrapper{
+            width:@calculatedW - @thumbGutter; 
+            .thumbnailContainer{
+                width:@calculatedW ;
+            }
+        }
+    }
+   
+}
+

@@ -1,0 +1,51 @@
+
+@import "thumbnails.less";
+@import "responsive.less";
+
+@gutter : 20px;
+@sidebarW : 250px;
+@contentPad : 10px;
+
+.container{
+    .clearfix();
+    border:1px black solid;
+    background: #ccd;
+    margin:0 auto;
+}
+
+.mainContent{
+    background-color: #cdc;
+    float:left;
+    padding:@contentPad;
+}
+
+.sidebar{
+    background-color: #dcc;
+    float:left;
+    margin-left: @gutter;
+    width: @sidebarW - (@contentPad * 2);
+    padding:@contentPad;
+}
+
+
+// Clearfix
+// --------
+// For clearing floats like a boss h5bp.com/q
+.clearfix {
+  *zoom: 1;
+  &:before,
+  &:after {
+    display: table;
+    content: "";
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+// Border Radius
+.border-radius(@radius) {
+  -webkit-border-radius: @radius;
+     -moz-border-radius: @radius;
+          border-radius: @radius;
+}

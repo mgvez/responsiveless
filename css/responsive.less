@@ -1,0 +1,52 @@
+
+
+#responsiveLayout > .set(1024px);
+
+
+@media (max-width: 599px) {
+    #responsiveLayout > .set(400px);
+}
+
+@media (min-width: 600px) and (max-width: 767px) {
+    #responsiveLayout > .set(600px);
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    #responsiveLayout > .set(768px);
+}
+
+@media (min-width: 1200px) {
+    #responsiveLayout > .set(1200px);
+}
+
+
+#responsiveLayout {
+    .set(@availableW) {
+        @contentW : @availableW - ( (@sidebarW + @gutter) + (@contentPad * 2) );
+        .container{
+            width:@availableW;
+        }
+        .mainContent{
+            width: @contentW;
+            #responsiveThumbnails > .set(@contentW);
+        }
+    }
+
+    .set(@availableW) when (@availableW =< 750){
+        @contentW : @availableW - (@contentPad * 2);
+        .container{
+            width:@availableW;
+        }
+        .mainContent{
+            width: @contentW;
+            float:none;
+            #responsiveThumbnails > .set(@contentW);
+        }
+        .sidebar{
+            width: @contentW;
+            margin-top: @gutter;
+            margin-left: 0;
+            float:none;
+        }
+    }
+}
