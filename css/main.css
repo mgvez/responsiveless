@@ -27,6 +27,102 @@
   margin: 0 0 20px 8px;
   background-color: #aac;
 }
+@media (min-width: 1896px) {
+  body .thumbnailWrapper {
+    width: 1888px;
+  }
+  body .thumbnailWrapper .thumbnailContainer {
+    width: 1896px;
+  }
+}
+@media (max-width: 1895px) and (min-width: 1738px) {
+  body .thumbnailWrapper {
+    width: 1730px;
+  }
+  body .thumbnailWrapper .thumbnailContainer {
+    width: 1738px;
+  }
+}
+@media (max-width: 1737px) and (min-width: 1580px) {
+  body .thumbnailWrapper {
+    width: 1572px;
+  }
+  body .thumbnailWrapper .thumbnailContainer {
+    width: 1580px;
+  }
+}
+@media (max-width: 1579px) and (min-width: 1422px) {
+  body .thumbnailWrapper {
+    width: 1414px;
+  }
+  body .thumbnailWrapper .thumbnailContainer {
+    width: 1422px;
+  }
+}
+@media (max-width: 1421px) and (min-width: 1264px) {
+  body .thumbnailWrapper {
+    width: 1256px;
+  }
+  body .thumbnailWrapper .thumbnailContainer {
+    width: 1264px;
+  }
+}
+@media (max-width: 1263px) and (min-width: 1106px) {
+  body .thumbnailWrapper {
+    width: 1098px;
+  }
+  body .thumbnailWrapper .thumbnailContainer {
+    width: 1106px;
+  }
+}
+@media (max-width: 1105px) and (min-width: 948px) {
+  body .thumbnailWrapper {
+    width: 940px;
+  }
+  body .thumbnailWrapper .thumbnailContainer {
+    width: 948px;
+  }
+}
+@media (max-width: 947px) and (min-width: 790px) {
+  body .thumbnailWrapper {
+    width: 782px;
+  }
+  body .thumbnailWrapper .thumbnailContainer {
+    width: 790px;
+  }
+}
+@media (max-width: 789px) and (min-width: 632px) {
+  body .thumbnailWrapper {
+    width: 624px;
+  }
+  body .thumbnailWrapper .thumbnailContainer {
+    width: 632px;
+  }
+}
+@media (max-width: 631px) and (min-width: 474px) {
+  body .thumbnailWrapper {
+    width: 466px;
+  }
+  body .thumbnailWrapper .thumbnailContainer {
+    width: 474px;
+  }
+}
+@media (max-width: 473px) and (min-width: 316px) {
+  body .thumbnailWrapper {
+    width: 308px;
+  }
+  body .thumbnailWrapper .thumbnailContainer {
+    width: 316px;
+  }
+}
+@media (max-width: 315px) {
+  body .thumbnailWrapper {
+    width: 150px;
+  }
+  body .thumbnailWrapper .thumbnailContainer {
+    width: 158px;
+  }
+}
 .container {
   width: 1024px;
 }
