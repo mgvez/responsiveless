@@ -41,7 +41,7 @@
 
     .setMedias(@i) {
         body{
-            @minW : @i * @thumbRealW;
+            @minW : (@i * @thumbRealW);
             @media (min-width: @minW){
                 #responsiveThumbnails > .set(@minW);
             }
@@ -51,8 +51,8 @@
 
     .setMedia(@i) when (@i > 1) {  
         body{
-            @minW : @i * @thumbRealW;
-            @maxW : ((@i + 1) * @thumbRealW) - 1;
+            @minW : (@i * @thumbRealW);
+            @maxW : (((@i + 1) * @thumbRealW) - 1);
             @media (max-width: @maxW ) and (min-width: @minW){
                 #responsiveThumbnails > .set(@minW);
             }
@@ -62,7 +62,7 @@
 
     .setMedia(@i) when (@i = 1) {
         body{
-            @maxW : (2 * @thumbRealW) - 1;
+            @maxW : ((2 * @thumbRealW) - 1);
             @media (max-width: @maxW ){
                 #responsiveThumbnails > .set(@thumbRealW);
             }
